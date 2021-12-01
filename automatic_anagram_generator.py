@@ -7,7 +7,7 @@ import time
 def loader(file):
     """Opens a dic.txt file and returns a list of strings."""
     try:
-        with open(r'.\extra_files\dictionary_words.txt', encoding='UTF-8') as in_file:
+        with open(file, encoding='UTF-8') as in_file:
             loaded_text = in_file.read().strip().split('\n')
             loaded_text = list(map(lambda x: x.lower(), loaded_text))
             return loaded_text
